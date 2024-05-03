@@ -1,0 +1,7 @@
+/* media query for navbar */
+@media only screen and (max-width: 599px){
+    .navimg {
+        width: 125px !important;
+    }}
+    
+

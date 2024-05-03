@@ -1,0 +1,78 @@
+{% include 'home/header.html' %}
+{% block content %}
+{% load static %}
+
+<section>
+    <div class="projcard-container">
+    
+        <div class="projcard projcard-blue">
+          <div class="projcard-innerbox">
+            <img class="projcard-img" src="{% static 'image/abacus.png' %}" />
+            <div class="projcard-textbox">
+              <div class="projcard-title">Abacus</div>
+              <div class="projcard-subtitle"> "Counting with Beads: Exploring the Abacus in Our Digital Age"</div>
+              <div class="projcard-bar"></div>
+              <div class="projcard-description">In a world dominated by digital calculators and smartphones, the humble abacus might seem like a relic of the past. However, this ancient calculating tool still holds a special place in our understanding of mathematics and has enduring value, especially in educational settings. In this blog post, we'll delve into the fascinating world of the abacus, exploring its history, its significance, and why it continues to be relevant today.Highlight pivotal moments in history where the abacus played a crucial role in commerce, science, and education. From its use in medieval European markets to its prominence in ancient Chinese schools, showcase how this simple tool shaped human civilization.</div>
+              <div class="projcard-tagbox">
+                <span class="heart-icon" onclick="toggleHeart(this)">&#10084;</span>
+                <span class="like-count">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="projcard projcard-red">
+          <div class="projcard-innerbox">
+            <img class="projcard-img"src="{% static 'image/abacus.png' %}" />
+            <div class="projcard-textbox">
+              <div class="projcard-title" >That's Another Card</div>
+              <div class="projcard-subtitle">I don't really think that I need to explain anything here</div>
+              <div class="projcard-bar"></div>
+              <div class="projcard-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+              <div class="projcard-tagbox">
+                <span class="heart-icon" onclick="toggleHeart(this)">&#10084;</span>
+                <span class="like-count">0</span>
+            </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="projcard projcard-green">
+          <div class="projcard-innerbox">
+            <img class="projcard-img" src="{% static 'image/abacus.png' %}" />
+            <div class="projcard-textbox">
+              <div class="projcard-title"  >And a Third Card</div>
+              <div class="projcard-subtitle">You know what this is by now</div>
+              <div class="projcard-bar"></div>
+              <div class="projcard-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</div>
+              <div class="projcard-tagbox">
+                <span class="heart-icon" onclick="toggleHeart(this)">&#10084;</span>
+                <span class="like-count">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="projcard projcard-customcolor" style="--projcard-color: #F5AF41;">
+          <div class="projcard-innerbox">
+            <img class="projcard-img"src="{% static 'image/abacus.png' %}" />
+            <div class="projcard-textbox">
+              <div class="projcard-title" >Last Card</div>
+              <div class="projcard-subtitle">That's the last one. Have a nice day!</div>
+              <div class="projcard-bar"></div>
+              <div class="projcard-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+              <div class="projcard-tagbox">
+                <span class="heart-icon" onclick="toggleHeart(this)">&#10084;</span>
+                <span class="like-count">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+</section> 
+
+
+
+{% endblock %}
+{% include 'home/footer.html' %}

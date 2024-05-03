@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igenius</title>
+    <!-- Bootsrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="{% static 'css/webcss/style.css' %}">
+    <!-- media css -->
+    <link rel="stylesheet" href="{% static 'css/webcss/media.css' %}">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="..." crossorigin="anonymous" />
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+     <!-- favicon -->
+    <link rel="icon" type="image/png" href="{% static 'image/logo.png' %}">
+
+</head>
+<body>
+    <!-- Navbar -->
+<section>
+  <nav class="navbar navbar-expand-lg navbar-light navmain bg-light">
+    <div class="container-fluid position-relative">
+      <img src="{% static 'image/logo.png' %}" class="navimg" style="max-height: 80px;" alt="" >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse position-relative main" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mainul">
+          <li class="nav-item">
+            <a class="nav-link active fw-bold" aria-current="page" href="{% url 'homepage' %}" style="color: #077bb4;">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="{% url 'about_us' %}" style="color: #077bb4;">ABOUT US</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #077bb4;">
+              OUR COURSES
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item fw-bold" href="{% url 'course' %}">ABACUS</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">VEDIC MATHEMATICS</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">RUBIK'S CUBE</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">HANDWRITING IMPROVEMENT</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">ABACUS PROGRAM FOR SCHOOL</a></li>
+            </ul>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="{% url 'franchise' %}" style="color: #077bb4;">FRANCHISE</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #077bb4;">
+              ACHIEVEMENT 
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item fw-bold" href="{% url 'achivephotos' %}">PHOTOS</a></li>
+              <li><a class="dropdown-item fw-bold" href="{% url 'achivevideo' %}">VIDEOS</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="{% url 'blog' %}" style="color: #077bb4;">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="{% url 'our_team' %}" style="color: #077bb4;">OUR TEAM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="{% url 'career' %}" style="color: #077bb4;">CAREER</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="{% url 'find_us' %}" style="color: #077bb4;">FIND US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="{% url 'contact-us' %}" style="color: #077bb4;">CONTACT US</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</section>
+
+      {% block content %}
+      {% endblock %}
+
+
+    
+</body>
+</html>

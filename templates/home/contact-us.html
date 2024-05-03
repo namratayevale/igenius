@@ -1,0 +1,83 @@
+{% include 'home/header.html' %}
+{% block content %}
+{% load static %}
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-6 p-5 shadow">
+                <h2 class="title-leaf">CONTACT US</h2>
+                <form action="" method="post">
+                    <div class="form-group ">
+                        <label for="inputAddress" class=" fs-5">Name : </label><br>
+                        <input type="text" class="form-control" placeholder="Enter Your Name...">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress" class=" fs-5">E-mail : </label><br>
+                        <input type="text" class="form-control" placeholder="Enter Your E-mail...">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress" class=" fs-5">Contact : </label><br>
+                        <input type="text" class="form-control" placeholder="Enter Your Contact...">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress" class=" fs-5">Message : </label><br>
+                        <textarea class="w-100" name="massage" placeholder="Enter Your Message..."></textarea>
+                    </div>
+                    <a class="btn btn-primary" href="#">Submit</a>
+                </form>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-6 ">
+                <div class="text-center">
+                    <img src="{% static 'image/a1.png' %}"  alt="">
+
+                </div>
+                <!-- <div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Franchise Location
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Nashik</a>
+                          <a class="dropdown-item" href="#">Pune</a>
+                          <a class="dropdown-item" href="#">Mumbai</a>
+                      </div>
+                    
+                </div>
+
+            </div> -->
+        </div>
+    </div>
+</section>
+<section>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-12 col-lg-12 text-center">
+            <div class="">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.1364326496714!2d73.76835957585371!3d20.002787822223695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb9f7bfc155d%3A0x99ad98210ae26227!2sSilver%20Plaza!5e0!3m2!1sen!2sin!4v1714215712821!5m2!1sen!2sin" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+            </div> <br>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  FRANCHISE LOCATION
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">NASHIK</a></li>
+                  <li><a class="dropdown-item" href="#">MUMBAI</a></li>
+                  <li><a class="dropdown-item" href="#">PUNE</a></li>
+                </ul>
+              </div>    </div>
+    
+    </div>
+</div>
+</section>
+<!-- Example single danger button -->
+
+  <script>
+    $(document).ready(function(){
+        $('.dropdown-toggle').dropdown();
+    });
+</script>
+{% endblock %}
+{% include 'home/footer.html' %}

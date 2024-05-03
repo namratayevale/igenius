@@ -1,0 +1,172 @@
+{% load static %}
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content= 
+		"width=device-width, initial-scale=1.0"> 
+	<title> Footer</title> 
+	
+	<style> 
+		footer { 
+            background-color: #00436d;
+			color: #fff; 
+			padding: 30px 0; 
+		} 
+
+		.footer-links a { 
+			color: #fff; 
+			text-decoration: none; 
+			margin-right: 15px; 
+			transition: color 0.3s ease; 
+		} 
+
+		.footer-links a:hover { 
+			color: #adb5bd; 
+		} 
+	</style> 
+</head> 
+
+<body> 
+	<footer class="footer mt-5"> 
+		<div class="container-fluid"> 
+			<div class="row"> 
+				<div class="col-md-3"> 
+					<img src="{% static 'image/logo.png' %}" alt=""> 
+				</div> 
+				<div class="col-md-2"> 
+					<h5 class="text-white">About Us</h5> 
+					<p> 
+						We believe in creating a supportive and inclusive environment where individuals of all fitness levels can thrive. With a wide range of fitness programs, cutting-edge equipment, and a strong community, we are committed to helping you reach your goals. 
+				</p> 
+				</div> 
+
+				<div class="col-xl col-lg-2 col-sm-3">
+					<div class="footer-title">
+						<h4 class="text-white">Quick Links</h4>
+					</div>
+
+					<div class="footer-contain">
+						<ul class="text-decoration-none text-white">
+							<li>
+								<a href="{% url 'homepage' %}" class="text-content text-white">Home</a>
+							</li><li>
+								<a href="{% url 'about_us' %}" class="text-content text-white">About Us</a>
+							</li><li>
+								<a href="{% url 'course' %}" class="text-content text-white">Our Course</a>
+							</li>
+							<li>
+								<a href="{% url 'franchise' %}" class="text-content text-white">Franchies</a>
+							</li>
+							  
+							   <li>
+								<a href="{% url 'achivephotos' %}" class="text-content text-white">Achivement</a>
+							</li>
+							<li>
+								<a href="{% url 'blog' %}" class="text-content text-white">Blog</a>
+							</li>
+							<li>
+								<a href="{% url 'career' %}" class="text-content text-white">Career</a>
+							</li>
+							<li>
+								<a href="{% url 'find_us' %}" class="text-content text-white">find us</a>
+							</li>
+						</ul>
+					</div>
+				</div> 
+
+
+				<div class="col-xl col-lg-2 col-sm-3">
+					<div class="footer-title">
+						<h4 class="text-white">Follow Us</h4>
+					</div>
+
+					<div class="footer-contain">
+						<ul class="text-decoration-none text-white">
+							<li>
+								<a  class="text-content text-white">Whatsapp</a>
+							</li><li>
+								<a class="text-content text-white">Instagram</a>
+							</li><li>
+								<a class="text-content text-white">Facebook</a>
+							</li>
+							<li>
+								<a  class="text-content text-white">Twitter</a>
+							</li>
+							  
+							   <li>
+								<a  class="text-content text-white">Linkdin</a>
+							</li>
+							<li>
+								<a class="text-content text-white">youtube</a>
+							</li>
+							<li>
+								<a  class="text-content text-white">Swipe</a>
+							</li>
+							<li>
+								<a class="text-content text-white">Google+</a>
+							</li>
+							<li>
+								<a  class="text-content text-white">E-Mail</a>
+							</li>
+						</ul>
+					</div>
+				</div> 
+
+				
+
+				<div class="col-md-2"> 
+					<h5 class="text-light">Contact Us</h5> 
+					<ul class="list-unstyled"> 
+						<li>Email:  info.igeniusnsk@gmail.com</li> 
+						<li>Phone: +91 9011120036</li> 
+						<li>Office No. 7/8/9, 2 nd Floor Silver Plaza, Opp. BSNL Office, Canada Corner Sharanpur Road, Nashik (Maharashtra) Pin.422002</li> 
+					</ul> 
+				</div> 
+				<div class="col-md-3"> 
+					
+					<!-- <ul class="list-inline footer-links "> 
+						<li class="list-inline-item"> 
+							<a href="#"> 
+								<i class="fab fa-facebook"></i> 
+							</a> 
+						</li> 
+						<li class="list-inline-item"> 
+							<a href="#"> 
+								<i class="fab fa-twitter"></i> 
+							</a> 
+						</li> 
+						<li class="list-inline-item"> 
+							<a href="#"> 
+								<i class="fab fa-instagram"></i> 
+							</a> 
+						</li> 
+						<li class="list-inline-item"> 
+							<a href="#"> 
+								<i class="fab fa-linkedin"></i> 
+							</a> 
+						</li> 
+					</ul>  -->
+				</div> 
+			</div> 
+			<hr> 
+			<div class="row"> 
+				<div class="col-md-6"> 
+					<p>© 2024 Your Website. All rights reserved.</p> 
+				</div> 
+				 <div class="col-md-6 text-end"> 
+					<ul class="list-inline footer-links"> 
+						<li class="list-inline-item"> 
+							<h6 class="text-content text-white">- Developed By:<a href="https://richsol.com/" target="_blank"
+								 class="text-white"> Rich System Solution's Pvt Ltd </a></h6>
+						</li> 
+				</div> 
+			</div> 
+		</div> 
+	</footer>
+    
+    
+</body> 
+
+</html>
