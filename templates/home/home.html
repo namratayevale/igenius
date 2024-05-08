@@ -2,6 +2,15 @@
 
 {% block content %}
     {% load static %}
+
+<div class="popup" id="popup">
+  <span class="close-btn" onclick="closePopup()">close</span>
+  <img src="{% static 'image/popup.PNG' %}" alt="Popup Image">
+  <div class="text-center">
+    <a href="#" class="btn btn-primary rounded-pill">Register</a>
+  </div>
+</div>
+  
       <!-- carousel -->
 <section>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -38,31 +47,45 @@
 
 </section>
 <!-- counter -->
-<section class="counter">
-  <div class="container ">
-    <div class="row text-center p-3 text-title">
-      <div class="col-3 col-md-3 col-lg-3">
-          <h2>+12</h2>
-          <p>Training Provide</p>
+<!-- counter -->
+<section class="counter py-5">
+  <div class="container-fluid">
+    <div class="row justify-content-center text-center">
+      <div class="col-12 col-md-6 col-lg-2 mb-4">
+        <div class="count-box count1">
+          <h2 id="count1">05</h2>
+          <h5>Presents in 5+ countries</h5>
+        </div>
       </div>
-      <div class="col-3 col-md-3 col-lg-3">
-        <h2>+12</h2>
-        <p>Trusted Client</p>
+      <div class="col-12 col-md-6 col-lg-2 mb-4">
+        <div class="count-box count2">
+          <h2 id="count2">550</h2>
+          <h5>Authorized Franchisees</h5>
+        </div>
       </div>
-      <div class="col-3 col-md-3 col-lg-3">
-        <h2>+12</h2>
-        <p>Awards Win</p>
+      <div class="col-12 col-md-6 col-lg-2 mb-4">
+        <div class="count-box count3">
+          <h2 id="count3">250000</h2>
+          <h5>Trained Students Since 2009</h5>
+        </div>
       </div>
-      <div class="col-3 col-md-3 col-lg-3">
-        <h2>+12</h2>
-        <p>Total Student</p>
+      <div class="col-12 col-md-6 col-lg-2 mb-4">
+        <div class="count-box count4">
+          <h2 id="count4">50</h2>
+          <h5>Qualified Trainers</h5>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-2 mb-4">
+        <div class="count-box count5">
+          <h2 id="count5">10</h2>
+          <h5>School Project Association</h5>
+        </div>
       </div>
     </div>
   </div>
 </section>
-
 <!-- achivment count  -->
-<section class="my-2  gym_about">
+<!-- <section class="my-2  gym_about">
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-6 my-5 text-center">
@@ -99,7 +122,7 @@
    </div>
  
   </div>
-</section>
+</section> -->
 
 <!-- <section class="testimonial py-5">
   <div>
@@ -136,7 +159,7 @@
   </div>
 </section> -->
 
-<section class="ath_carousel_se_04">
+<section class="ath_carousel_se_04 py-5">
   <div class="container-fluid px-0">
       <div class="container ">
           <div class="row">
@@ -275,7 +298,7 @@
 
 <!-- story of founder -->
 
-<section class="story">
+<!-- <section class="story">
   <div>
     <div class="container p-5">
       <div class="row">
@@ -289,13 +312,8 @@
 
           <strong>Nita Pawar</strong> a qualification by M.A B.Ed. Mathematics, she started abacus teaching with small abacus centre and later she opened up "I-Genius Abacus Academy” in 2007 and it's successfully educating students since now. She always tries to give new and the best education to their students. She herself has studied about all the things and has set her own syllabus suitable to Indian Math. The Smart Abacus and Vedic Mathematics program set very effectively for school student. She’s continue working and developing new and smart learning techniques for students, and she wants to reach out to all the students at the grassroots level and prepare those students too for today’s competitive age.</p>
         <div>
-          <!-- <a class="btn text-light rounded-pill w-25" style="background-color: #f2832e;" href="#">Read More</a> -->
-          <!-- <a class="btn btn-danger rounded-pill w-25" href="#">Contact Us</a> -->
         </div>
       </div>
-        <!-- <div class="col-12 col-md-6 col-lg-6 text-center">
-          <img class="" style="border-bottom:15px solid #f2832e;" height="503px" width="95%" src="{% static 'image/nitamam.jpg' %}" alt="">
-        </div> -->
       </div>
 
       <div class="row">
@@ -318,7 +336,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- <section class="testimonial py-5">
   <div>
     <h2 class="title-leaf">AWARDS</h2>
@@ -352,19 +370,19 @@
 </section> -->
 
 <!-- Award image -->
-<section class="ath_carousel_se_04">
+<section class="ath_carousel_se_04" >
   <div class="container-fluid px-0 py-5">
       <div class="container ">
           <div class="row">
               <div class="col-sm-12 text-center">
                 <h2 class="title-leaf">SHINING MOMENT'S</h2>
               </div>
-              <div class="col-md-12 px-4 pt-3">
+              <div class="col-md-12 px-4 pt-3 " id="zindex">
                   <div class="owl-carousel ath_carousel_se_04_carousel owl-theme">
                       <!-- 01 -->
                     <div class="card">
                       <div class="item">
-                        <div class="col-sm-12 p-2 delay-1">
+                        <div class="col-sm-12 delay-1">
                             <div class="">
                                 <div class="product-image3 ath_hover">
                                   <img src="https://igeniusindia.in/assets/uploads/news/gallery_151.jpg" height="200px" class="card-img-top" alt="Sample Image">
@@ -384,7 +402,7 @@
                       <!-- 2 -->
                       <div class="card">
                         <div class="item">
-                          <div class="col-sm-12 p-2 delay-1">
+                          <div class="col-sm-12 delay-1">
                               <div class="">
                                   <div class="product-image3 ath_hover">
                                     <img src="https://igeniusindia.in/assets/uploads/news/gallery_170.jpg" height="200px" class="card-img-top" alt="Sample Image">
@@ -403,7 +421,7 @@
                       <!-- 3 -->
                       <div class="card">
                         <div class="item">
-                          <div class="col-sm-12 p-2 delay-1">
+                          <div class="col-sm-12 delay-1">
                               <div class="">
                                   <div class="product-image3 ath_hover">
                                     <img src="https://igeniusindia.in/assets/uploads/news/gallery_170.jpg" height="200px" class="card-img-top" alt="Sample Image">
@@ -424,7 +442,7 @@
                       <!-- 4 -->
                       <div class="card">
                         <div class="item">
-                          <div class="col-sm-12 p-2 delay-1">
+                          <div class="col-sm-12 delay-1">
                               <div class="">
                                   <div class="product-image3 ath_hover">
                                     <img src="https://igeniusindia.in/assets/uploads/news/gallery_170.jpg" height="200px" class="card-img-top" alt="Sample Image">
@@ -443,7 +461,7 @@
                       <!-- 5 -->
                       <div class="card">
                         <div class="item">
-                          <div class="col-sm-12 p-2 delay-1">
+                          <div class="col-sm-12 delay-1">
                               <div class="">
                                   <div class="product-image3 ath_hover">
                                     <img src="https://igeniusindia.in/assets/uploads/news/gallery_170.jpg" height="200px" class="card-img-top" alt="Sample Image">
@@ -462,7 +480,7 @@
                       <!-- 6 -->
                       <div class="card">
                         <div class="item">
-                          <div class="col-sm-12 p-2 delay-1">
+                          <div class="col-sm-12 delay-1">
                               <div class="">
                                   <div class="product-image3 ath_hover">
                                       <img src="{% static 'image/abacus.png' %}"
@@ -533,16 +551,15 @@
 </div>
 </section> -->
 
-<section class="ath_carousel_se_04">
+<!-- <section class="ath_carousel_se_04">
   <div class="container-fluid px-0">
       <div class="container ">
           <div class="row">
               <div class="col-sm-12 text-center">
                 <h2 class="title-leaf">CHOOSE EXCELLENCE,CHOOSE US..</h2>
               </div>
-              <div class="col-md-12 px-4 pt-3">
+              <div class="col-md-12 px-4 pt-3" id="zindex">
                   <div class="owl-carousel ath_carousel_se_04_carousel owl-theme">
-                      <!-- 01 -->
                     <div class="card">
                       <div class="item">
                         <div class="col-sm-12 p-2 delay-1">
@@ -553,13 +570,8 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                     </div>
-
-
-                      <!-- 2 -->
                       <div class="card">
                         <div class="item">
                           <div class="col-sm-12 p-2 delay-1">
@@ -570,12 +582,8 @@
                                   </div>
                               </div>
                           </div>
-  
                       </div>
-  
                       </div>
-  
-                      <!-- 3 -->
                       <div class="card">
                         <div class="item">
                           <div class="col-sm-12 p-2 delay-1">
@@ -586,14 +594,8 @@
                                 </div>
                               </div>
                           </div>
-  
                       </div>
-  
                       </div>
-  
-
-
-                      <!-- 4 -->
                       <div class="card">
                         <div class="item">
                           <div class="col-sm-12 p-2 delay-1">
@@ -604,12 +606,8 @@
                                 </div>
                               </div>
                           </div>
-  
                       </div>
-  
                       </div>
-  
-                      <!-- 5 -->
                       <div class="card">
                         <div class="item">
                           <div class="col-sm-12 p-2 delay-1">
@@ -620,12 +618,8 @@
                                 </div>
                               </div>
                           </div>
-  
                       </div>
-  
                       </div>
-  
-                      <!-- 6 -->
                       <div class="card">
                         <div class="item">
                           <div class="col-sm-12 p-2 delay-1">
@@ -636,20 +630,76 @@
                                 </div>
                               </div>
                           </div>
-  
                       </div>
-  
                       </div>
-  
                   </div>
               </div>
-
           </div>
-
-          <!-- our clients -->
-
       </div>
   </div>
+</section> -->
+
+<section class="why p-4">
+  <div class="container text-center mt-2">
+    <div class="row mt-3 justify-content-center">
+       <h2 class="text-dark">WHY I-GENIUS ABACUS ? </h2>
+       <h6 class="text-dark">I-Genius Academy is recognised as a "One of The Best
+           Abacus Institute in Maharashtra" and authorised by <br> Educational board of Vocational Training & Research Mumbai (Regd. by Govt. of India.)</h6><br><br>
+        <h5 class="text-danger">I-Genius Abacus is largest world recorder institute in Wonder Book<br> of International, London</h5>
+        <div class="col-md-4 pt-3">
+          <div class="card abc p-3">
+            <span> <center><img src="https://igeniusindia.in/assets/images/f2.png" class="card-img-top" alt="Image 2" style="width: 45px;height: 60px;"></center></span>
+             <div class="card-body">
+              <h5 class="card-title text-danger">Qualified Trainers</h5>
+              <p class="card-text">A Strong team of 50+ Highly Motivated and well trained Teachers. Your Kids Will Learn from the Math Experts.</p>
+            </div>
+          </div>
+        </div>
+      <div class="col-md-4 pt-3">
+        <div class="card abc p-3">
+          <span> <center><img src="https://igeniusindia.in/assets/images/f2.png" class="card-img-top" alt="Image 2" style="width: 45px;height: 60px;"></center></span>
+           <div class="card-body">
+            <h5 class="card-title text-success">Study Material</h5>
+            <p class="card-text">Well researched books developed by child agod groups and level wise and also child friendly abacus tools board games</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 pt-3">
+        <div class="card abc p-3">
+          <span> <center><img src="https://igeniusindia.in/assets/images/f2.png" class="card-img-top" alt="Image 2" style="width: 45px;height: 60px;"></center></span>
+           <div class="card-body">
+            <h5 class="card-title text-danger">Online / Ofline Classes</h5>
+            <p class="card-text">Conducting Online/Offline classes for all courses offered by the academy.</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-4 pt-3">
+        <div class="card abc p-3">
+          <span> <center><img src="https://igeniusindia.in/assets/images/f2.png" class="card-img-top" alt="Image 2" style="width: 45px;height: 60px;"></center></span>
+            <div class="card-body text-center">
+            <h5 class="card-title text-danger">Naional Competitions</h5>
+            <p class="card-text">Organized Abacus District/State National/Interristianal jouel competition every wear to iminate our student's 
+             exam fear and crestere them master in matti's.</p>
+            <!-- <i class="fas fa-star fa-3x"></i> You can replace this icon with your desired one -->
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 pt-3">
+       <div class="card abc p-3">
+         <span> <center><img src="https://igeniusindia.in/assets/images/f2.png" class="card-img-top" alt="Image 2" style="width: 45px;height: 60px;"></center></span>
+          <div class="card-body">
+           <h5 class="card-title text-success">Associations</h5>
+           <p class="card-text">Associated with some of the most prestigious schools and Institute in Nashik With over 10 thousand plus students
+             studding Abacus Course in the current year.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  
 </section>
 
 
@@ -699,19 +749,108 @@
 </div>
 </section> -->
 
-<section class="ath_carousel_se_04">
+<!-- kids activity -->
+<!-- <section class="ath_carousel_se_04">
   <div class="container-fluid px-0 py-5">
       <div class="container ">
           <div class="row">
               <div class="col-sm-12 text-center">
                 <h2 class="title-leaf">KID'S ACTIVITY</h2>
               </div>
-              <div class="col-md-12 px-4 pt-3">
+              <div class="col-md-12 px-4 pt-3" id="zindex">
                   <div class="owl-carousel ath_carousel_se_04_carousel owl-theme">
-                      <!-- 01 -->
                     <div class="card">
                       <div class="item">
-                        <div class="col-sm-12 p-2 delay-1">
+                        <div class="col-sm-12 delay-1">
+                            <div class="">
+                                <div class="product-image3 ath_hover">
+                                  <iframe width="250" height="200" src="https://www.youtube.com/embed/pfldMJMZvzw?si=BHvvnvP1m_vYLJs5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                      <div class="card">
+                        <div class="item">
+                          <div class="col-sm-12 delay-1">
+                              <div class="">
+                                <div class="product-image3 ath_hover">
+                                  <iframe width="250" height="200" src="https://www.youtube.com/embed/pfldMJMZvzw?si=BHvvnvP1m_vYLJs5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="card">
+                        <div class="item">
+                          <div class="col-sm-12 delay-1">
+                              <div class="">
+                                <div class="product-image3 ath_hover">
+                                  <iframe width="250" height="200" src="https://www.youtube.com/embed/pfldMJMZvzw?si=BHvvnvP1m_vYLJs5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="card">
+                        <div class="item">
+                          <div class="col-sm-12 delay-1">
+                              <div class="">
+                                <div class="product-image3 ath_hover">
+                                  <iframe width="250" height="200" src="https://www.youtube.com/embed/pfldMJMZvzw?si=BHvvnvP1m_vYLJs5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="card">
+                        <div class="item">
+                          <div class="col-sm-12 delay-1">
+                              <div class="">
+                                <div class="product-image3 ath_hover">
+                                  <iframe width="250" height="200" src="https://www.youtube.com/embed/pfldMJMZvzw?si=BHvvnvP1m_vYLJs5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="card">
+                        <div class="item">
+                          <div class="col-sm-12 delay-1">
+                              <div class="">
+                                <div class="product-image3 ath_hover">
+                                  <iframe width="250" height="200" src="https://www.youtube.com/embed/pfldMJMZvzw?si=BHvvnvP1m_vYLJs5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section> -->
+
+<!-- math calculation youtube video -->
+<section class="ath_carousel_se_04">
+  <div class="container-fluid px-0 py-5">
+      <div class="container ">
+          <div class="row">
+              <div class="col-sm-12 text-center">
+                <h2 class="title-leaf">MATH CALCULATION</h2>
+                <h5 class="text-danger" > MATH CALCULATION I-GENIUS STUDENTS PERFORMING MENTAL</h5><br>
+               <h5>
+                Students trained at I-Genius Abacus Academy can calculate faster than a calculator. They are ready to perform their Mental Math calculations with great accuracy and speed.
+               </h5>
+
+              </div>
+              <div class="col-md-12 px-4 pt-3" id="zindex">
+                  <div class="owl-carousel ath_carousel_se_04_carousel owl-theme">
+                     
+                    <div class="card">
+                      <div class="item">
+                        <div class="col-sm-12 delay-1">
                             <div class="">
                                 <div class="product-image3 ath_hover">
                                   <iframe width="250" height="200" src="https://www.youtube.com/embed/pfldMJMZvzw?si=BHvvnvP1m_vYLJs5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -724,10 +863,10 @@
                     </div>
 
 
-                      <!-- 2 -->
+                 
                       <div class="card">
                         <div class="item">
-                          <div class="col-sm-12 p-2 delay-1">
+                          <div class="col-sm-12 delay-1">
                               <div class="">
                                 <div class="product-image3 ath_hover">
                                   <iframe width="250" height="200" src="https://www.youtube.com/embed/pfldMJMZvzw?si=BHvvnvP1m_vYLJs5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -739,10 +878,10 @@
   
                       </div>
   
-                      <!-- 3 -->
+                      
                       <div class="card">
                         <div class="item">
-                          <div class="col-sm-12 p-2 delay-1">
+                          <div class="col-sm-12 delay-1">
                               <div class="">
                                 <div class="product-image3 ath_hover">
                                   <iframe width="250" height="200" src="https://www.youtube.com/embed/pfldMJMZvzw?si=BHvvnvP1m_vYLJs5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -756,10 +895,10 @@
   
 
 
-                      <!-- 4 -->
+                      
                       <div class="card">
                         <div class="item">
-                          <div class="col-sm-12 p-2 delay-1">
+                          <div class="col-sm-12 delay-1">
                               <div class="">
                                 <div class="product-image3 ath_hover">
                                   <iframe width="250" height="200" src="https://www.youtube.com/embed/pfldMJMZvzw?si=BHvvnvP1m_vYLJs5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -771,10 +910,10 @@
   
                       </div>
   
-                      <!-- 5 -->
+                  
                       <div class="card">
                         <div class="item">
-                          <div class="col-sm-12 p-2 delay-1">
+                          <div class="col-sm-12 delay-1">
                               <div class="">
                                 <div class="product-image3 ath_hover">
                                   <iframe width="250" height="200" src="https://www.youtube.com/embed/pfldMJMZvzw?si=BHvvnvP1m_vYLJs5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -786,10 +925,9 @@
   
                       </div>
   
-                      <!-- 6 -->
                       <div class="card">
                         <div class="item">
-                          <div class="col-sm-12 p-2 delay-1">
+                          <div class="col-sm-12 delay-1">
                               <div class="">
                                 <div class="product-image3 ath_hover">
                                   <iframe width="250" height="200" src="https://www.youtube.com/embed/pfldMJMZvzw?si=BHvvnvP1m_vYLJs5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -805,10 +943,7 @@
               </div>
 
           </div>
-
-          <!-- our clients -->
-
-      </div>
+        </div>
   </div>
 </section>
 
@@ -818,25 +953,28 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-12 col-lg-12 text-center">
-          <h2 class="title-leaf">WE ARE PROVIDE ONLINE & OFFLINE</h2><br>
-          <h2 class="title-leaf">CLASSES FOR YOU</h2>
+          <h2 class="title-leaf">WITH I-GENIUS YOU CAN JOIN ABACUS ONLINE CLASSES OR OFFLINE CLASSES </h2>
       </div>
-      <div class="row mt-2">
-        <div class="col-12 col-md-6 col-lg-6  ">
-          <div class="text-center shadow class-mode p-5">
+      <div class="row mt-3">
+        <div class="col-12 col-md-6 col-lg-6 pt-3">
+          <div class="text-center class-mode p-5">
             <h3>OFFLINE CLASSES</h3>
             <p>If you are looking for Offline Abacus classes near you, raise an inquiry. I-Genius has over 500 plus Abacus centers Globally. We shall contact you with the details of our nearest Abacus center.</p>
             <div class="btn">
-            <button class="btn btn-primary">Raise Inquiry</button>
+            <a href="#" class="btn btn-success">ENQUIRE NOW</a> <br><br>
+            <a href="#" class="btn btn-outline-info border-3 text-dark"><b>Find Nearest Abacus Centre</b></a>
+
           </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-6 ">
-          <div class="text-center shadow class-mode p-5">
+        <div class="col-12 col-md-6 col-lg-6 pt-3">
+          <div class="text-center class-mode p-5">
             <h3>ONLINE CLASSES</h3>
             <p>If you are looking for an Abacus Online classes, book a free demo class for a firsthand experience at the World's finest Abacus E-Learning Platform of I-Genius Abacus.</p>
             <div class="btn">
-              <button class="btn btn-primary">Book Demo Class</button>
+              <a href="#" class="btn btn-success">ENQUIRE NOW</a> <br><br>
+              <a href="#" class="btn btn-outline-info border-3 text-dark"><b>Find Nearest Abacus Centre</b></a>
+
             </div>
           </div>
         </div>
@@ -847,13 +985,13 @@
 </section>
 
 <!-- Testimonial -->
-<section class="py-5">
-  <div class="container">
+<!-- <section class="py-5">
+  <div class="container zindex">
     <div class="text-center">
-      <h2 class="title-leaf">TESTIMONIAL</h2>
+      <h2 class="title-leaf">PARENT'S TESTIMONIAL</h2>
     </div>
     <div class="row">
-      <div class="col-12 testimonials owl-theme owl-carousel">
+      <div class="col-12 testimonials owl-theme owl-carousel" id="zindex">
         <div class="p-5 bg-white shadow m-4 border-radius-new"> 
           <img src="https://annedece.sirv.com/Images/commos.png" class="pb-4 comms">
           <p class="text-muted">Lorem ipsum dolor sit amet, Sed sit amet ex id turpis consectetur adipiscing elit. Sed velit tellus, facilisis at ultrices eu, ultrices sed justo. </p>
@@ -918,15 +1056,66 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
+
+<!-- OTHER TESTIMONIAL -->
+<section>
+  <div class="container py-5 text-center">
+    <h2 class="center title-leaf">FRANCHISE TESTIMONIAL</h2><br>
+    <div class="owl-carousel owl-theme" id="zindex">
+      <div class="item">
+        <div class="card text-center shadow testimonial">
+          <div class="card-body">
+            <img src="https://media.istockphoto.com/id/1506935230/photo/happy-african-american-father-and-adorable-mixed-race-daughter-are-reading-a-book-and-smiling.webp?b=1&s=170667a&w=0&k=20&c=7ebbjSkXMEWxRGik9ycb0WR7MampUgvIZ40ZK5DomkQ=" alt="Icon 1" class="rounded-icon">
+            <h5 class="card-title">Hemant Gangurde</h5>
+            <p class="card-text fw-bold">A Parent’s of Hemant Gangurde, Kalwan</p>
+            <p class="card-text">Parent testimonials give the parents of your prospective students a highly credible and relatable way to understand what the experience at your school is like. The effect of social proof is powerful, and is often much more convincing than what your school will have to say about itself. We see parent testimonial videos regularly used on websites, blogs, social media, advertising campaigns, and throughout the student recruitment process.</p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card text-center shadow testimonial">
+          <div class="card-body">
+            <img src="https://media.istockphoto.com/id/1506935230/photo/happy-african-american-father-and-adorable-mixed-race-daughter-are-reading-a-book-and-smiling.webp?b=1&s=170667a&w=0&k=20&c=7ebbjSkXMEWxRGik9ycb0WR7MampUgvIZ40ZK5DomkQ=" alt="Icon 1" class="rounded-icon">
+            <h5 class="card-title">Hemant Gangurde</h5>
+            <p class="card-text fw-bold">A Parent’s of Hemant Gangurde, Kalwan</p>
+            <p class="card-text">Parent testimonials give the parents of your prospective students a highly credible and relatable way to understand what the experience at your school is like. The effect of social proof is powerful, and is often much more convincing than what your school will have to say about itself. We see parent testimonial videos regularly used on websites, blogs, social media, advertising campaigns, and throughout the student recruitment process.</p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card text-center shadow testimonial">
+          <div class="card-body">
+            <img src="https://media.istockphoto.com/id/1506935230/photo/happy-african-american-father-and-adorable-mixed-race-daughter-are-reading-a-book-and-smiling.webp?b=1&s=170667a&w=0&k=20&c=7ebbjSkXMEWxRGik9ycb0WR7MampUgvIZ40ZK5DomkQ=" alt="Icon 1" class="rounded-icon">
+            <h5 class="card-title">Hemant Gangurde</h5>
+            <p class="card-text fw-bold">A Parent’s of Hemant Gangurde, Kalwan</p>
+            <p class="card-text">Parent testimonials give the parents of your prospective students a highly credible and relatable way to understand what the experience at your school is like. The effect of social proof is powerful, and is often much more convincing than what your school will have to say about itself. We see parent testimonial videos regularly used on websites, blogs, social media, advertising campaigns, and throughout the student recruitment process.</p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card text-center shadow testimonial">
+          <div class="card-body">
+            <img src="https://media.istockphoto.com/id/1506935230/photo/happy-african-american-father-and-adorable-mixed-race-daughter-are-reading-a-book-and-smiling.webp?b=1&s=170667a&w=0&k=20&c=7ebbjSkXMEWxRGik9ycb0WR7MampUgvIZ40ZK5DomkQ=" alt="Icon 1" class="rounded-icon">
+            <h5 class="card-title">Hemant Gangurde</h5>
+            <p class="card-text fw-bold">A Parent’s of Hemant Gangurde, Kalwan</p>
+            <p class="card-text">Parent testimonials give the parents of your prospective students a highly credible and relatable way to understand what the experience at your school is like. The effect of social proof is powerful, and is often much more convincing than what your school will have to say about itself. We see parent testimonial videos regularly used on websites, blogs, social media, advertising campaigns, and throughout the student recruitment process.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section> 
+
 
 <!-- Social Media icon -->
 <section>
   <div class="position-fixed inqiry-btn">
-    <a href="#"><img width="40" height="40" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/></a><br>
-    <a href="#"><img width="40" height="40" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new"/></a><br>
-    <a href="#"><img width="40" height="40" src="https://img.icons8.com/color/48/youtube-play.png" alt="youtube-play"/></a><br>
-    <a href="#"><img width="40" height="40" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/></a><br>
+    <a href="{% url 'instagram' %}" target="_blank"><img width="40" height="40" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/></a><br>
+    <a href="{% url 'facebook' %}" target="_blank"><img width="40" height="40" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new"/></a><br>
+    <a href="{% url 'youtube' %}" target="_blank"><img width="40" height="40" src="https://img.icons8.com/color/48/youtube-play.png" alt="youtube-play"/></a><br>
+    <a href="{% url 'whatsapp_chat' %}" target="_blank"><img width="40" height="40" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/></a><br>
     <!-- <a class="btn btn-primary " href="#">ENQUIRY</a> -->
   </div>
 </section>
@@ -984,8 +1173,82 @@ $(document).ready(function () {
   });
 });
 
+//Banner 
+function closePopup() {
+  document.getElementById('popup').style.top = '-100%'; // Move the pop-up off-screen from the top
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Animate the pop-up entry from the top when the page loads
+  document.getElementById('popup').style.top = '50%';
+});
+
+
+//count increse
+// Function to update count
+function updateCount(id, targetCount) {
+  var countElement = document.getElementById(id);
+  var currentCount = parseInt(countElement.innerText);
+  var increment = Math.ceil((targetCount - currentCount) / 100); // Adjust the increment for smoother animation
+  
+  if (currentCount < targetCount) {
+    countElement.innerText = currentCount + increment;
+  } else {
+    clearInterval(counters[id]); // Stop the counter when target is reached
+  }
+}
+
+// Counters
+// Object to hold intervals for each counter
+var counters = {};
+
+// Call updateCount for each counter
+counters.count1 = setInterval(function() {
+  updateCount('count1', 5); // Update count1 to 5
+}, 50); // Adjust the interval for smoother animation
+
+counters.count2 = setInterval(function() {
+  updateCount('count2', 550); // Update count2 to 550
+}, 50);
+
+counters.count3 = setInterval(function() {
+  updateCount('count3', 250000); // Update count3 to 250000
+}, 50);
+
+counters.count4 = setInterval(function() {
+  updateCount('count4', 50); // Update count4 to 50
+}, 50);
+
+counters.count5 = setInterval(function() {
+  updateCount('count5', 10); // Update count5 to 10
+}, 50);
 
 </script>
+
+<!-- SCRIPT FOR TESTIMONIAL -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:false,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:2
+          },
+          1000:{
+              items:3
+          }
+      }
+    });
+  });
+</script>
+
 
 {% endblock %}
 {% include 'home/footer.html' %}

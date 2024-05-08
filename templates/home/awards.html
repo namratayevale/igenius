@@ -1,0 +1,42 @@
+{% include 'home/header.html' %}
+{% block content %}
+{% load static %}
+
+<section class="py-4">
+    <div class="container">
+        <div class="text-center">
+            <h2>WATCH OUR ACHIVEMENT'S & AWARD'S</h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-6 text-center pt-3">
+                <div class="awardhead">
+                    <h6>Maharashtra Business Icon 2023 <br> I-Genius got the Award of “One of the best <br> Abacus Institute in Maharashtra”</h6>
+                </div>
+                <div class="awardimg">
+                    <img src="{% static 'image/capture.PNG' %}" alt="award">
+                </div>
+            </div>
+            <div class="col-6 text-center pt-3">
+                <div class="awardhead">
+                    <h6>Best Abacus Institute Award 2023
+                        Abacus Mental Arithmetic National Level Competition Winners & Best Abacus Institute Award by MAATS
+                        </h6>
+                </div>
+                <div class="awardimg">
+                    <img src="{% static 'image/Capture -1.PNG' %}" height="380" alt="award">
+                </div>
+            </div>
+            <div class="col-6 text-center pt-3">
+                <div class="awardhead">
+                    <h6>Maharashtra Business Icon 2023 <br> I-Genius got the Award of “One of the best <br> Abacus Institute in Maharashtra”</h6>
+                </div>
+                <div class="awardimg">
+                    <img src="{% static 'image/capture 1.PNG' %}" alt="award">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+{% endblock %}

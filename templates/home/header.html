@@ -22,16 +22,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
+    <!-- Font Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
      <!-- favicon -->
     <link rel="icon" type="image/png" href="{% static 'image/logo.png' %}">
+
+    
 
 </head>
 <body>
     <!-- Navbar -->
-<section>
+<section class="topnavbar">
   <nav class="navbar navbar-expand-lg navbar-light navmain bg-light">
     <div class="container-fluid position-relative">
       <img src="{% static 'image/logo.png' %}" class="navimg" style="max-height: 80px;" alt="" >
@@ -46,17 +50,18 @@
           <li class="nav-item">
             <a class="nav-link fw-bold" href="{% url 'about_us' %}" style="color: #077bb4;">ABOUT US</a>
           </li>
+<!-- HTML -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #077bb4;">
-              OUR COURSES
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item fw-bold" href="{% url 'course' %}">ABACUS</a></li>
-              <li><a class="dropdown-item fw-bold" href="#">VEDIC MATHEMATICS</a></li>
-              <li><a class="dropdown-item fw-bold" href="#">RUBIK'S CUBE</a></li>
-              <li><a class="dropdown-item fw-bold" href="#">HANDWRITING IMPROVEMENT</a></li>
-              <li><a class="dropdown-item fw-bold" href="#">ABACUS PROGRAM FOR SCHOOL</a></li>
-            </ul>
+          <a class="nav-link dropdown-toggle fw-bold" href="{% url 'course' %}" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: #077bb4;">
+            OUR COURSES
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item fw-bold" href="{% url 'abacus' %}">ABACUS</a></li>
+            <li><a class="dropdown-item fw-bold" href="#">VEDIC MATHEMATICS</a></li>
+            <li><a class="dropdown-item fw-bold" href="#">RUBIK'S CUBE</a></li>
+            <li><a class="dropdown-item fw-bold" href="#">HANDWRITING IMPROVEMENT</a></li>
+            <li><a class="dropdown-item fw-bold" href="#">ABACUS PROGRAM FOR SCHOOL</a></li>
+          </ul>
           </li>
 
 
@@ -65,18 +70,20 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #077bb4;">
-              ACHIEVEMENT 
+              MEDIA 
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item fw-bold" href="{% url 'award' %}">ACHIEVEMENT</a></li>
               <li><a class="dropdown-item fw-bold" href="{% url 'achivephotos' %}">PHOTOS</a></li>
               <li><a class="dropdown-item fw-bold" href="{% url 'achivevideo' %}">VIDEOS</a></li>
+              <li><a class="dropdown-item fw-bold" href="{% url 'news' %}">NEWS</a></li>
             </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link fw-bold" href="{% url 'blog' %}" style="color: #077bb4;">BLOG</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold" href="{% url 'our_team' %}" style="color: #077bb4;">OUR TEAM</a>
+            <a class="nav-link fw-bold" href="{% url 'our_team' %}" style="color: #077bb4;">SCHOOL PROJECT</a>
           </li>
           <li class="nav-item">
             <a class="nav-link fw-bold" href="{% url 'career' %}" style="color: #077bb4;">CAREER</a>

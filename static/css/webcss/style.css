@@ -1,6 +1,7 @@
 /* CSS FOR HOME PAGE */
 body{
-  font-family: "Roboto Slab", serif;
+  font-family: "Poppins", sans-serif;
+  background: url("static 'image/Untitled design.png'");
 }
 /* Navbar CSS */
 .main{
@@ -29,6 +30,67 @@ ul li a:hover {
   display: none;
 }
 
+/* navbar Sticky */
+.topnavbar{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+/* Slider card index */
+#zindex{
+  position: relative;
+  opacity: 1;
+}
+
+/* @media (max-width: 768px) {
+  .topnavbar {
+      position: sticky; 
+  }
+} */
+
+
+/* style from banner */
+/* Add styles for the pop-up here */
+.popup {
+  position: fixed;
+  top: 0; /* Initially off-screen from the top */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background-color: white;
+  padding: 40px;
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  transition: top 0.5s ease; /* Adding transition for smooth animation */
+}
+.popup img {
+  width: 100%;
+  max-width: 100%;
+  height: 500px;
+  display: block;
+  margin: 0 auto;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .popup img {
+    max-width: 100%;
+    height: auto;
+  }
+  .popup{
+    padding: 8px;
+    padding-top: 35px;
+  }
+}
+
 /* All heading color */
 h1,h2,h3,h4,h5,h6{
   color: #077bb4;
@@ -36,7 +98,82 @@ h1,h2,h3,h4,h5,h6{
 
 /* counter css */
 .counter{
-  background-color: #f0700e63;
+  background-color: #ffeabd;
+}
+.text-title  h2
+{
+  color: black;
+}
+
+.count1 h2{
+  background-color: #f58634;
+  width: 183px;
+  padding: 25px 0px 25px 0px;
+  border-radius: 27px 1px 27px 1px;
+  /* margin-left: 53px; */
+}
+
+.count1 h5{
+  color: red;
+  float: left;
+}
+
+.count2 h2{
+  background-color: #01afec;
+  width: 183px;
+  padding: 25px 0px 25px 0px;
+  border-radius: 27px 1px 27px 1px;
+  /* margin-left: 53px; */
+}
+
+.count2 h5{
+  color: #a18004;
+  float: left;
+}
+
+.count3 h2{
+  background-color: #73c24a;
+  width: 183px;
+  padding: 25px 0px 25px 0px;
+  border-radius: 27px 1px 27px 1px;
+  /* margin-left: 53px; */
+}
+.count3 h5{
+  color: #f58634;
+  float: left;
+}
+.count4 h2{
+  background-color: #fdd024;
+  width: 183px;
+  padding: 25px 0px 25px 0px;
+  border-radius: 27px 1px 27px 1px;
+  /* margin-left: 53px; */
+}
+.count4 h5{
+  color: #01afec;
+  float: left;
+}
+
+.count5 h2{
+  background-color: #f3585c;
+  width: 183px;
+  padding: 25px 0px 25px 0px;
+  border-radius: 27px 1px 27px 1px;
+  /* margin-left: 53px; */
+}
+
+.count5 h5{
+  color: #46b90a;
+  float: left;
+}
+
+
+@media (max-width: 700px) {
+  .count-box {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* heading underline css */
@@ -59,11 +196,6 @@ h1,h2,h3,h4,h5,h6{
 
 /* end Course card hover effect */
 
-/* count increase */
-.text-title  h2
-{
-  color: brown;
-}
 
 /* youtube video slider */
 /* .youtube-slider{
@@ -91,7 +223,8 @@ h1,h2,h3,h4,h5,h6{
 
 /* class mode section */
 .class-mode{
-    border-radius: 37px 0px 37px 0px;
+    /* border-radius: 37px 0px 37px 0px; */
+    border: 2px solid orange;
 }
 
 /* Testimonial */
@@ -128,7 +261,7 @@ h1,h2,h3,h4,h5,h6{
 /* Testimonial */
 .owl-carousel .owl-item img {
 	display: inline-block !important;
-	width: auto;
+	width: 100%;
 }
 .author-img img {
 	width: 70px !important;
@@ -146,6 +279,47 @@ img.comms {
 	height: auto;
 }
 
+/* other testimonial */
+.testimonial {
+  border: none;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  /* border-radius: 10px;  */
+}
+.testimonial-description {
+  margin-top: 10px;
+}
+.rounded-icon {
+  border-radius: 50%;
+  max-width: 143px;
+  height: 130px;
+  background-color: grey; /* Set background color to grey */
+  border: 2px solid #76c04b; /* Set border color to red */
+}
+
+
+/* Course card css */
+
+.course-card{
+  border: 2px solid orange;
+}
+/* franchise css */
+.franhead{
+  color: #f58733;
+}
+.franpara #para1{
+  color: #e93337;
+}
+.franpara #para2{
+  color: #4589b8;
+}
+.franpara #para3{
+  color: #77c04b;
+}
+.franpara #para4{
+  color: #ab0404;
+}
 /* franchise card hover */
 .custom-card {
   border: 2px solid red;
@@ -442,7 +616,7 @@ img.comms {
   position: relative;
   display: block;
   height: 100%;  
-  border-radius: calc(var(--curve) * 1px);
+  /* border-radius: calc(var(--curve) * 1px); */
   overflow: hidden;
   text-decoration: none;
   margin-right: 12px;
@@ -537,6 +711,16 @@ img.comms {
 
 .videocard{
   height: 100%;
+}
+
+/* css for gallary image */
+.cardtext{
+  position: relative;
+  top: -111px;
+  background-color: white;
+}
+.imgcard{
+  height: 71%;
 }
 
 /* our team page card css */
@@ -696,7 +880,7 @@ img.comms {
 
 
 
-
+/* css for image carousel */
 
 a {
   text-decoration: none;
@@ -716,7 +900,7 @@ a:hover {
 .ath_hover {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 200px;
   padding: 0px !important;
   overflow: hidden;
 
@@ -904,6 +1088,123 @@ a:hover {
   .ath_carousel_se_04 .owl-carousel .owl-nav button.owl-next {
       top: 42%;
       right: 0px;
-
   }
 }
+
+/* Achivement-Award page css */
+.awardhead{
+  border: 2px solid #f68634;
+  padding: 14px;
+  width: 454px;
+}
+.awardimg{
+  border: 2px solid #f68634;
+  padding: 14px;
+  width: 454px;
+  margin-top: 12px;
+}
+
+.why{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url("../../image/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* FAQ CSS*/
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion .accordion-item button[aria-expanded='true'] {
+  border-bottom: 1px solid #73c24a;
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #73c24a;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #73c24a;
+  border: 1px solid #73c24a;
+}
+
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 1em;
+}
+
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 9px;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+.accordion button[aria-expanded='true'] {
+  color: #73c24a;
+}
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  overflow-y: auto;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 1em;
+}
+

@@ -1,0 +1,147 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="{% static 'css/dashcss/dashboard.css' %}">
+
+    <!-- Bootsrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="..." crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Vertical navbar -->
+    <div class="vertical-nav bg-white" id="sidebar">
+        <div class="py-4 px-3 mb-4 bg-light">
+            <div class="media d-flex align-items-center">
+                <!-- <img src="https://bootstrapious.com/i/snippets/sn-v-nav/avatar.png" alt="..." width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm"> -->
+                <div class="media-body">
+                    <h4 class="m-0">DASHBOARD</h4>
+                    <!-- <p class="font-weight-light text-muted mb-0">Web developer</p> -->
+                </div>
+            </div>
+        </div>
+    
+        <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Main</p>
+    
+        <ul class="nav flex-column bg-white mb-0">
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark font-italic bg-light">
+                    <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+                    Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark font-italic">
+                    <i class="fa fa-address-card mr-3 text-primary fa-fw"></i>
+                    About
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link text-dark font-italic dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
+                    Services
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Service 1</a>
+                    <a class="dropdown-item" href="#">Service 2</a>
+                    <a class="dropdown-item" href="#">Service 3</a>
+                    <!-- Add more services as needed -->
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark font-italic">
+                    <i class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
+                    Gallery
+                </a>
+            </li>
+        </ul>
+    
+        <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Charts</p>
+    
+        <ul class="nav flex-column bg-white mb-0">
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark font-italic">
+                    <i class="fa fa-area-chart mr-3 text-primary fa-fw"></i>
+                    Area charts
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark font-italic">
+                    <i class="fa fa-bar-chart mr-3 text-primary fa-fw"></i>
+                    Bar charts
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark font-italic">
+                    <i class="fa fa-pie-chart mr-3 text-primary fa-fw"></i>
+                    Pie charts
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark font-italic">
+                    <i class="fa fa-line-chart mr-3 text-primary fa-fw"></i>
+                    Line charts
+                </a>
+            </li>
+        </ul>
+    </div>
+      <!-- End vertical navbar -->
+  
+  
+  <!-- Page content holder -->
+  <div class="page-content p-5 page-wrapper" id="content">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div>
+                <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4"><i class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold"></small></button>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-light bg-white rounded-pill shadow-sm px-4 dropdown-toggle" type="button" id="adminDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    ADMIN
+                </button>
+                <div class="dropdown-menu" aria-labelledby="adminDropdown">
+                    <a class="dropdown-item" href="#">Change Password</a>
+                    <a class="dropdown-item" href="#">LogOut</a>
+                    <!-- <a class="dropdown-item" href="#">Service 3</a> -->
+                </div>
+            </div>      
+          </div>
+    </nav>
+    <!-- Toggle button -->
+    <!-- <div>
+        <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4"><i class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold"></small></button>
+    </div> -->
+    <!-- Demo content -->
+    <div>
+        {% block content %}
+
+        {% endblock %}
+
+    </div>
+
+    <div class="text-center p-3 bg-light footer fixed-bottom">
+        © 2024 Copyright:
+        <a class="text-reset fw-bold" href="#">I-Genius.com</a>
+      </div>
+  </div>
+  <!-- End demo content -->
+
+  <script src="{% static 'javascript/dashboard.js' %}"></script>
+</body>
+</html>
